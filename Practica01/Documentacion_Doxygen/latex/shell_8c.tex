@@ -1,0 +1,62 @@
+\hypertarget{shell_8c}{}\doxysection{Referencia del Archivo shell.\+c}
+\label{shell_8c}\index{shell.c@{shell.c}}
+
+
+Este archivo contiene el programa Shell sort.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}header.\+h\char`\"{}}\newline
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{shell_8c_a4fe509b61e5892bf0c3015dc8311ad3d}{Shell}} (int $\ast$A, int n)
+\begin{DoxyCompactList}\small\item\em Implementación del algoritmo de ordenamiento shell, el cual ordena los elementos lejanos unos de otros y luego ir reduciendo esa distancia hasta llegar a ordenar adyacentes. Esto se logra con una serie de divisiones sucesivas de la lista en subgrupos más pequeños que se ordenan internamente mediante el algoritmo de inserción. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Este archivo contiene el programa Shell sort. 
+
+\begin{DoxyAuthor}{Autor}
+Los chalanes de Marckess 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+29/03/2023 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{shell_8c_a4fe509b61e5892bf0c3015dc8311ad3d}\label{shell_8c_a4fe509b61e5892bf0c3015dc8311ad3d}} 
+\index{shell.c@{shell.c}!Shell@{Shell}}
+\index{Shell@{Shell}!shell.c@{shell.c}}
+\doxysubsubsection{\texorpdfstring{Shell()}{Shell()}}
+{\footnotesize\ttfamily void Shell (\begin{DoxyParamCaption}\item[{int $\ast$}]{A,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Implementación del algoritmo de ordenamiento shell, el cual ordena los elementos lejanos unos de otros y luego ir reduciendo esa distancia hasta llegar a ordenar adyacentes. Esto se logra con una serie de divisiones sucesivas de la lista en subgrupos más pequeños que se ordenan internamente mediante el algoritmo de inserción. 
+
+Ordena un arreglo de enteros utilizando el algoritmo Shell Sort.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em A} & Apuntador a un arreglo de enteros \\
+\hline
+{\em n} & El tamaño o número de elementos del arreglo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+void 
+\end{DoxyReturn}
+\begin{DoxyNote}{Nota}
+El algoritmo de ordenamiento shell consiste en\+: ~\newline
+-\/Se divide el arreglo a la mitad ~\newline
+-\/Se inicializa la variable b=1 porque por lo menos hay 1 intercambio de elementos en el intervalo actual ~\newline
+-\/Se recorre el arreglo desde i=k hasta i\texorpdfstring{$<$}{<}=n-\/1 ~\newline
+-\/Se compara si A\mbox{[}i-\/k\mbox{]}\texorpdfstring{$>$}{>}A\mbox{[}i\mbox{]}, en caso de que sí, intercambian posiciones y se incrementa el valor de la variable b ~\newline
+-\/Si no hay ningún intercambio en todo el arreglo, b=0, por lo que el bucle interno se detiene ~\newline
+-\/Se divide el arreglo a la mitad y se repite el proceso hasta que k\texorpdfstring{$>$}{>}=1 
+\end{DoxyNote}
+\begin{DoxyRemark}{Comentarios}
+Complejidad de tiempo en el peor de los casos\+: O(n$^\wedge$2), en el mejor de los casos\+: O(nlog(n)) 
+\end{DoxyRemark}

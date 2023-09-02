@@ -1,0 +1,75 @@
+\hypertarget{main_8c}{}\doxysection{Referencia del Archivo main.\+c}
+\label{main_8c}\index{main.c@{main.c}}
+
+
+Programa principal que contiene la lógica del programa.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}header.\+h\char`\"{}}\newline
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8c_a7e97d1216a6b28e895a71b8d50563a85}{main}} (int n\+\_\+arg, char $\ast$args\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Este archivo contiene la lógica del programa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Programa principal que contiene la lógica del programa. 
+
+\begin{DoxyAuthor}{Autor}
+Los chalanes de Marckess 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+29/03/2023 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{main_8c_a7e97d1216a6b28e895a71b8d50563a85}\label{main_8c_a7e97d1216a6b28e895a71b8d50563a85}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{n\+\_\+arg,  }\item[{char $\ast$}]{args\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Este archivo contiene la lógica del programa. 
+
+\begin{DoxyNote}{Nota}
+Instrucciones de compilación\+: gcc \mbox{\hyperlink{main_8c}{main.\+c}} \mbox{\hyperlink{burbuja_8c}{burbuja.\+c}} \mbox{\hyperlink{insercion_8c}{insercion.\+c}} \mbox{\hyperlink{seleccion_8c}{seleccion.\+c}} \mbox{\hyperlink{merge_sort_8c}{merge\+Sort.\+c}} \mbox{\hyperlink{quick_sort_8c}{quick\+Sort.\+c}} \mbox{\hyperlink{shell_8c}{shell.\+c}} -\/o main -\/std=c17 (Es necesario pasar todos los archivos como parámetro, ya que se utiliza un puntero a funciones para reducir códgo) 
+
+Instrucciones de ejecución\+: Sigue el siguiente formato\+: ./main N INICIAL\+\_\+\+ALGORITMO IMPRIMIR\+\_\+\+ARREGLO\+\_\+\+O\+\_\+\+TIEMPO? \texorpdfstring{$<$}{<} 10mil\+\_\+numeros.\+txt 
+
+Toma 2 argumentos de entrada\+: ~\newline
+ 1. La cantidad de datos que se le quieren pasar al programa ~\newline
+ -\/Por ejemplo\+: 1000, 5000, 10000 ~\newline
+ 2. Un carácter para elegir el tipo de algoritmo al que se quiere utilizar ~\newline
+-\/Burbuja\+Optimizada\+: b ~\newline
+-\/Selección\+: s ~\newline
+-\/Inserción\+: i ~\newline
+-\/Merge\+Sort\+: m ~\newline
+-\/Quick\+Sort\+: q ~\newline
+-\/Shell\+: h ~\newline
+ 3. Si se quiere imprimir... ~\newline
+-\/Sí\+: 1 -\/ imprime el arreglo ~\newline
+-\/No\+: 0 -\/ imprime los tiempos ~\newline
+ Ejemplo, para usar el algoritmo de ordenamiento de burbuja para 1000 datos y que se quiera imprimir su contenido sería\+: ~\newline
+./main 1000 b 1 ~\newline
+ Ejemplo, para usar el algoritmo de mezcla para 10000 datos e imprimir los tiempos que tarda sería\+: ~\newline
+./main 10000 m 0
+\end{DoxyNote}
+Función principal del programa
+
+
+\begin{DoxyParams}{Parámetros}
+{\em argc} & Cantidad de argumentos pasados a la función. \\
+\hline
+{\em argv} & Array de argumentos pasados a la función.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Un valor entero que indica el éxito o el fracaso del programa. 
+\end{DoxyReturn}

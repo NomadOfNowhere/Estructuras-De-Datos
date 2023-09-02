@@ -1,0 +1,60 @@
+\hypertarget{burbuja_8c}{}\doxysection{Referencia del Archivo burbuja.\+c}
+\label{burbuja_8c}\index{burbuja.c@{burbuja.c}}
+
+
+Este archivo contiene el programa Bubble Sort u ordenamiento burbuja.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}header.\+h\char`\"{}}\newline
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{burbuja_8c_a13f3f675824490859328210df1956fe4}{Burbuja\+Optimizada}} (int $\ast$A, int n)
+\begin{DoxyCompactList}\small\item\em Ordena un arreglo de enteros utilizando el algoritmo de burbuja. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Este archivo contiene el programa Bubble Sort u ordenamiento burbuja. 
+
+\begin{DoxyAuthor}{Autor}
+Los chalanes de Marckess 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+29/03/2023 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{burbuja_8c_a13f3f675824490859328210df1956fe4}\label{burbuja_8c_a13f3f675824490859328210df1956fe4}} 
+\index{burbuja.c@{burbuja.c}!BurbujaOptimizada@{BurbujaOptimizada}}
+\index{BurbujaOptimizada@{BurbujaOptimizada}!burbuja.c@{burbuja.c}}
+\doxysubsubsection{\texorpdfstring{BurbujaOptimizada()}{BurbujaOptimizada()}}
+{\footnotesize\ttfamily void Burbuja\+Optimizada (\begin{DoxyParamCaption}\item[{int $\ast$}]{A,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Ordena un arreglo de enteros utilizando el algoritmo de burbuja. 
+
+Ordena un arreglo de enteros utilizando el algoritmo de burbuja optimizada.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em A} & Arreglo de enteros a ordenar. \\
+\hline
+{\em n} & Tamaño del arreglo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+void
+\end{DoxyReturn}
+\begin{DoxyNote}{Nota}
+El algoritmo de la burbuja consiste en\+: ~\newline
+-\/Se compara el primer elemento con el segundo elemento. Si el primer elemento es mayor que el segundo, se intercambian. ~\newline
+-\/Se continúa comparando el segundo elemento con el tercer elemento, el tercer elemento con el cuarto, y así sucesivamente hasta que se hayan comparado todos los elementos adyacentes del arreglo. ~\newline
+-\/Si se encontró un elemento que debió ser intercambiado en el paso anterior, se repite el proceso desde el principio. ~\newline
+-\/En caso de que el arreglo ya se encuentre ordenado, gracias a las modificaciones de la burbuja optimizada, el algoritmo se detiene. 
+\end{DoxyNote}
+\begin{DoxyRemark}{Comentarios}
+Complejidad de tiempo en el peor de los casos\+: O(n$^\wedge$2) 
+\end{DoxyRemark}

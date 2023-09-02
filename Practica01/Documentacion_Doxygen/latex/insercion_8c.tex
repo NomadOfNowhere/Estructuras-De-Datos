@@ -1,0 +1,61 @@
+\hypertarget{insercion_8c}{}\doxysection{Referencia del Archivo insercion.\+c}
+\label{insercion_8c}\index{insercion.c@{insercion.c}}
+
+
+Este archivo contiene el programa Insertion Sort u ordenamiento por inserción.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}header.\+h\char`\"{}}\newline
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{insercion_8c_a0c1f5bc42001070576b15ae23aa50c4b}{Insercion}} (int $\ast$A, int n)
+\begin{DoxyCompactList}\small\item\em Implementación del algoritmo de ordenamiento por inserción. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Este archivo contiene el programa Insertion Sort u ordenamiento por inserción. 
+
+\begin{DoxyAuthor}{Autor}
+Los chalanes de Marckess 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+29/03/2023 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{insercion_8c_a0c1f5bc42001070576b15ae23aa50c4b}\label{insercion_8c_a0c1f5bc42001070576b15ae23aa50c4b}} 
+\index{insercion.c@{insercion.c}!Insercion@{Insercion}}
+\index{Insercion@{Insercion}!insercion.c@{insercion.c}}
+\doxysubsubsection{\texorpdfstring{Insercion()}{Insercion()}}
+{\footnotesize\ttfamily void Insercion (\begin{DoxyParamCaption}\item[{int $\ast$}]{A,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Implementación del algoritmo de ordenamiento por inserción. 
+
+Ordena un arreglo de enteros utilizando el algoritmo de inserción.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em A} & Apuntador a un arreglo de enteros \\
+\hline
+{\em n} & El tamaño o número de elementos del arreglo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+void 
+\end{DoxyReturn}
+\begin{DoxyNote}{Nota}
+El algoritmo de ordenamiento por inserción consiste en\+: ~\newline
+-\/Se toma el primer elemento del arreglo como el primer elemento del arreglo ordenado. ~\newline
+-\/Se toma el siguiente elemento y se compara con todos los elementos del arreglo, desde el valor actual de i hasta el final. ~\newline
+-\/Si el elemento es menor que el elemento actual, se desplaza el elemento actual una posición a la derecha. ~\newline
+-\/Si el elemento es mayor o igual que el elemento actual, se inserta el elemento en la posición actual. ~\newline
+-\/Se repite el proceso para cada elemento de la lista original, insertando cada elemento en su posición adecuada en la lista ordenada. 
+\end{DoxyNote}
+\begin{DoxyRemark}{Comentarios}
+Complejidad de tiempo en el peor de los casos\+: O(n$^\wedge$2) 
+\end{DoxyRemark}

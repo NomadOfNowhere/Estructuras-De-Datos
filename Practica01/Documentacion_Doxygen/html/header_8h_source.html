@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Practica sobre ordenamientos: Fichero Fuente header.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Practica sobre ordenamientos<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Practica sobre ordenamientos para la clase de algoritmos y estructuras de datos</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">header.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="header_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef SORTING_ALGORITHMS_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define SORTING_ALGORITHMS_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="header_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">   16</a></span><span class="preprocessor">#define TRUE 1</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="header_8h.html#aa93f0eb578d23995850d61f7d61c55c1">   22</a></span><span class="preprocessor">#define FALSE 0</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keywordtype">void</span> <a class="code hl_function" href="header_8h.html#a13f3f675824490859328210df1956fe4">BurbujaOptimizada</a>(<span class="keywordtype">int</span> *A, <span class="keywordtype">int</span> n);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keywordtype">void</span> <a class="code hl_function" href="header_8h.html#a2ddaa13b6187d8d57295fbbe5581de08">Seleccion</a>(<span class="keywordtype">int</span> *A, <span class="keywordtype">int</span> n);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keywordtype">void</span> <a class="code hl_function" href="header_8h.html#a0c1f5bc42001070576b15ae23aa50c4b">Insercion</a>(<span class="keywordtype">int</span> *A, <span class="keywordtype">int</span> n);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keywordtype">void</span> <a class="code hl_function" href="header_8h.html#a4a663eab2d40fb5b206a02a88dd03d35">MergeSort</a>(<span class="keywordtype">int</span> *A, <span class="keywordtype">int</span> p, <span class="keywordtype">int</span> r);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keywordtype">void</span> <a class="code hl_function" href="header_8h.html#afc41bac232c8c97f1b6a2359230a5097">Merge</a>(<span class="keywordtype">int</span> *A, <span class="keywordtype">int</span> p, <span class="keywordtype">int</span> q, <span class="keywordtype">int</span> r);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keywordtype">void</span> <a class="code hl_function" href="header_8h.html#af1e669ac444658b619d83cdb7bbcd6c1">Quicksort</a>(<span class="keywordtype">int</span> *A, <span class="keywordtype">int</span> p, <span class="keywordtype">int</span> r);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keywordtype">int</span> <a class="code hl_function" href="header_8h.html#acc55b41a0a7053bf797f4ebcd5d429b6">Pivot</a>(<span class="keywordtype">int</span> *A, <span class="keywordtype">int</span> p, <span class="keywordtype">int</span> r);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="keywordtype">void</span> <a class="code hl_function" href="header_8h.html#ae6c9b77d3b7d69ba28f305e696832261">Intercambiar</a>(<span class="keywordtype">int</span> *A, <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keywordtype">void</span> <a class="code hl_function" href="header_8h.html#a4fe509b61e5892bf0c3015dc8311ad3d">Shell</a>(<span class="keywordtype">int</span> *A, <span class="keywordtype">int</span> n);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#endif </span><span class="comment">/* SORTING_ALGORITHMS_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aheader_8h_html_a0c1f5bc42001070576b15ae23aa50c4b"><div class="ttname"><a href="header_8h.html#a0c1f5bc42001070576b15ae23aa50c4b">Insercion</a></div><div class="ttdeci">void Insercion(int *A, int n)</div><div class="ttdoc">Ordena un arreglo de enteros utilizando el algoritmo de inserción.</div><div class="ttdef"><b>Definition:</b> insercion.c:27</div></div>
+<div class="ttc" id="aheader_8h_html_a13f3f675824490859328210df1956fe4"><div class="ttname"><a href="header_8h.html#a13f3f675824490859328210df1956fe4">BurbujaOptimizada</a></div><div class="ttdeci">void BurbujaOptimizada(int *A, int n)</div><div class="ttdoc">Ordena un arreglo de enteros utilizando el algoritmo de burbuja optimizada.</div><div class="ttdef"><b>Definition:</b> burbuja.c:26</div></div>
+<div class="ttc" id="aheader_8h_html_a2ddaa13b6187d8d57295fbbe5581de08"><div class="ttname"><a href="header_8h.html#a2ddaa13b6187d8d57295fbbe5581de08">Seleccion</a></div><div class="ttdeci">void Seleccion(int *A, int n)</div><div class="ttdoc">Ordena un arreglo de enteros utilizando el algoritmo de selección.</div><div class="ttdef"><b>Definition:</b> seleccion.c:26</div></div>
+<div class="ttc" id="aheader_8h_html_a4a663eab2d40fb5b206a02a88dd03d35"><div class="ttname"><a href="header_8h.html#a4a663eab2d40fb5b206a02a88dd03d35">MergeSort</a></div><div class="ttdeci">void MergeSort(int *A, int p, int r)</div><div class="ttdoc">Ordena un arreglo de enteros utilizando el algoritmo Merge Sort.</div><div class="ttdef"><b>Definition:</b> mergeSort.c:29</div></div>
+<div class="ttc" id="aheader_8h_html_a4fe509b61e5892bf0c3015dc8311ad3d"><div class="ttname"><a href="header_8h.html#a4fe509b61e5892bf0c3015dc8311ad3d">Shell</a></div><div class="ttdeci">void Shell(int *A, int n)</div><div class="ttdoc">Ordena un arreglo de enteros utilizando el algoritmo Shell Sort.</div><div class="ttdef"><b>Definition:</b> shell.c:26</div></div>
+<div class="ttc" id="aheader_8h_html_acc55b41a0a7053bf797f4ebcd5d429b6"><div class="ttname"><a href="header_8h.html#acc55b41a0a7053bf797f4ebcd5d429b6">Pivot</a></div><div class="ttdeci">int Pivot(int *A, int p, int r)</div><div class="ttdoc">Escoge un pivote y lo utiliza para particionar el arreglo en dos sub-arreglos.</div><div class="ttdef"><b>Definition:</b> quickSort.c:32</div></div>
+<div class="ttc" id="aheader_8h_html_ae6c9b77d3b7d69ba28f305e696832261"><div class="ttname"><a href="header_8h.html#ae6c9b77d3b7d69ba28f305e696832261">Intercambiar</a></div><div class="ttdeci">void Intercambiar(int *A, int i, int j)</div><div class="ttdoc">Intercambia dos elementos de un arreglo.</div><div class="ttdef"><b>Definition:</b> quickSort.c:18</div></div>
+<div class="ttc" id="aheader_8h_html_af1e669ac444658b619d83cdb7bbcd6c1"><div class="ttname"><a href="header_8h.html#af1e669ac444658b619d83cdb7bbcd6c1">Quicksort</a></div><div class="ttdeci">void Quicksort(int *A, int p, int r)</div><div class="ttdoc">Ordena un arreglo de enteros utilizando el algoritmo Quicksort.</div><div class="ttdef"><b>Definition:</b> quickSort.c:65</div></div>
+<div class="ttc" id="aheader_8h_html_afc41bac232c8c97f1b6a2359230a5097"><div class="ttname"><a href="header_8h.html#afc41bac232c8c97f1b6a2359230a5097">Merge</a></div><div class="ttdeci">void Merge(int *A, int p, int q, int r)</div><div class="ttdoc">Fusiona dos sub-arreglos ordenados en un solo arreglo ordenado.</div><div class="ttdef"><b>Definition:</b> mergeSort.c:52</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

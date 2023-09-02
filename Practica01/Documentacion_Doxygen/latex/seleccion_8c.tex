@@ -1,0 +1,60 @@
+\hypertarget{seleccion_8c}{}\doxysection{Referencia del Archivo seleccion.\+c}
+\label{seleccion_8c}\index{seleccion.c@{seleccion.c}}
+
+
+Este archivo contiene el programa Selection sort u ordenamiento por selección.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}header.\+h\char`\"{}}\newline
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{seleccion_8c_a2ddaa13b6187d8d57295fbbe5581de08}{Seleccion}} (int $\ast$A, int n)
+\begin{DoxyCompactList}\small\item\em Implementación del algoritmo de ordenamiento por selección, el cual ordena un arreglo de enteros en forma ascendente. Consiste en encontrar el elemento mínimo del arreglo y colocarlo en su posición correcta en el arreglo ordenado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Este archivo contiene el programa Selection sort u ordenamiento por selección. 
+
+\begin{DoxyAuthor}{Autor}
+Los chalanes de Marckess 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+29/03/2023 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{seleccion_8c_a2ddaa13b6187d8d57295fbbe5581de08}\label{seleccion_8c_a2ddaa13b6187d8d57295fbbe5581de08}} 
+\index{seleccion.c@{seleccion.c}!Seleccion@{Seleccion}}
+\index{Seleccion@{Seleccion}!seleccion.c@{seleccion.c}}
+\doxysubsubsection{\texorpdfstring{Seleccion()}{Seleccion()}}
+{\footnotesize\ttfamily void Seleccion (\begin{DoxyParamCaption}\item[{int $\ast$}]{A,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Implementación del algoritmo de ordenamiento por selección, el cual ordena un arreglo de enteros en forma ascendente. Consiste en encontrar el elemento mínimo del arreglo y colocarlo en su posición correcta en el arreglo ordenado. 
+
+Ordena un arreglo de enteros utilizando el algoritmo de selección.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em A} & Apuntador a un arreglo de enteros \\
+\hline
+{\em n} & El tamaño o número de elementos del arreglo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+void 
+\end{DoxyReturn}
+\begin{DoxyNote}{Nota}
+El algoritmo de ordenamiento por selección consiste en\+: ~\newline
+ Consiste en encontrar el elemento mínimo del arreglo y colocarlo en su posición correcta en el arreglo ordenado. Este proceso se repite para el segundo elemento más pequeño, el tercer elemento más pequeño y así sucesivamente hasta que todo el arreglo se encuentre ordenado. ~\newline
+-\/Se encuentra el elemento mínimo del arreglo y se intercambia con el primer elemento. ~\newline
+-\/Se encuentra el elemento mínimo del arreglo que comienza en la segunda posición y se intercambia con el segundo elemento.\textbackslash{} ~\newline
+-\/Se continúa el proceso para cada elemento restante del arreglo, encontrando el elemento mínimo y colocándolo en su posición correcta en la lista ordenada. 
+\end{DoxyNote}
+\begin{DoxyRemark}{Comentarios}
+Complejidad de tiempo en el peor de los casos\+: O(n$^\wedge$2) 
+\end{DoxyRemark}

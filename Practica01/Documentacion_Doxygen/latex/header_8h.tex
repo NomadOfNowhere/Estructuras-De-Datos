@@ -1,0 +1,408 @@
+\hypertarget{header_8h}{}\doxysection{Referencia del Archivo header.\+h}
+\label{header_8h}\index{header.h@{header.h}}
+
+
+Este archivo contiene los prototipos de funciones de distintos algoritmos de ordenamiento.  
+
+
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{header_8h_aa8cecfc5c5c054d2875c03e77b7be15d}\label{header_8h_aa8cecfc5c5c054d2875c03e77b7be15d}} 
+\#define {\bfseries TRUE}~1
+\begin{DoxyCompactList}\small\item\em Valor verdadero La macro tiene el valor uno para representar verdadero. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{header_8h_aa93f0eb578d23995850d61f7d61c55c1}\label{header_8h_aa93f0eb578d23995850d61f7d61c55c1}} 
+\#define {\bfseries FALSE}~0
+\begin{DoxyCompactList}\small\item\em Valor falso La macro tiene el valor cero para representar falso. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{header_8h_a13f3f675824490859328210df1956fe4}{Burbuja\+Optimizada}} (int $\ast$A, int n)
+\begin{DoxyCompactList}\small\item\em Ordena un arreglo de enteros utilizando el algoritmo de burbuja optimizada. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{header_8h_a2ddaa13b6187d8d57295fbbe5581de08}{Seleccion}} (int $\ast$A, int n)
+\begin{DoxyCompactList}\small\item\em Ordena un arreglo de enteros utilizando el algoritmo de selección. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{header_8h_a0c1f5bc42001070576b15ae23aa50c4b}{Insercion}} (int $\ast$A, int n)
+\begin{DoxyCompactList}\small\item\em Ordena un arreglo de enteros utilizando el algoritmo de inserción. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{header_8h_a4a663eab2d40fb5b206a02a88dd03d35}{Merge\+Sort}} (int $\ast$A, int p, int r)
+\begin{DoxyCompactList}\small\item\em Ordena un arreglo de enteros utilizando el algoritmo Merge Sort. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{header_8h_afc41bac232c8c97f1b6a2359230a5097}{Merge}} (int $\ast$A, int p, int q, int r)
+\begin{DoxyCompactList}\small\item\em Fusiona dos sub-\/arreglos ordenados en un solo arreglo ordenado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{header_8h_af1e669ac444658b619d83cdb7bbcd6c1}{Quicksort}} (int $\ast$A, int p, int r)
+\begin{DoxyCompactList}\small\item\em Ordena un arreglo de enteros utilizando el algoritmo Quicksort. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{header_8h_acc55b41a0a7053bf797f4ebcd5d429b6}{Pivot}} (int $\ast$A, int p, int r)
+\begin{DoxyCompactList}\small\item\em Escoge un pivote y lo utiliza para particionar el arreglo en dos sub-\/arreglos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{header_8h_ae6c9b77d3b7d69ba28f305e696832261}{Intercambiar}} (int $\ast$A, int i, int j)
+\begin{DoxyCompactList}\small\item\em Intercambia dos elementos de un arreglo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{header_8h_a4fe509b61e5892bf0c3015dc8311ad3d}{Shell}} (int $\ast$A, int n)
+\begin{DoxyCompactList}\small\item\em Ordena un arreglo de enteros utilizando el algoritmo Shell Sort. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Este archivo contiene los prototipos de funciones de distintos algoritmos de ordenamiento. 
+
+\begin{DoxyAuthor}{Autor}
+Los chalanes de Marckess 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+29/03/2023 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{header_8h_a13f3f675824490859328210df1956fe4}\label{header_8h_a13f3f675824490859328210df1956fe4}} 
+\index{header.h@{header.h}!BurbujaOptimizada@{BurbujaOptimizada}}
+\index{BurbujaOptimizada@{BurbujaOptimizada}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{BurbujaOptimizada()}{BurbujaOptimizada()}}
+{\footnotesize\ttfamily void Burbuja\+Optimizada (\begin{DoxyParamCaption}\item[{int $\ast$}]{A,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Ordena un arreglo de enteros utilizando el algoritmo de burbuja optimizada. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em A} & Arreglo de enteros a ordenar. \\
+\hline
+{\em n} & Tamaño del arreglo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+void
+\end{DoxyReturn}
+Ordena un arreglo de enteros utilizando el algoritmo de burbuja optimizada.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em A} & Arreglo de enteros a ordenar. \\
+\hline
+{\em n} & Tamaño del arreglo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+void
+\end{DoxyReturn}
+\begin{DoxyNote}{Nota}
+El algoritmo de la burbuja consiste en\+: ~\newline
+-\/Se compara el primer elemento con el segundo elemento. Si el primer elemento es mayor que el segundo, se intercambian. ~\newline
+-\/Se continúa comparando el segundo elemento con el tercer elemento, el tercer elemento con el cuarto, y así sucesivamente hasta que se hayan comparado todos los elementos adyacentes del arreglo. ~\newline
+-\/Si se encontró un elemento que debió ser intercambiado en el paso anterior, se repite el proceso desde el principio. ~\newline
+-\/En caso de que el arreglo ya se encuentre ordenado, gracias a las modificaciones de la burbuja optimizada, el algoritmo se detiene. 
+\end{DoxyNote}
+\begin{DoxyRemark}{Comentarios}
+Complejidad de tiempo en el peor de los casos\+: O(n$^\wedge$2) 
+\end{DoxyRemark}
+\mbox{\Hypertarget{header_8h_a0c1f5bc42001070576b15ae23aa50c4b}\label{header_8h_a0c1f5bc42001070576b15ae23aa50c4b}} 
+\index{header.h@{header.h}!Insercion@{Insercion}}
+\index{Insercion@{Insercion}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{Insercion()}{Insercion()}}
+{\footnotesize\ttfamily void Insercion (\begin{DoxyParamCaption}\item[{int $\ast$}]{A,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Ordena un arreglo de enteros utilizando el algoritmo de inserción. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em A} & Arreglo de enteros a ordenar. \\
+\hline
+{\em n} & Tamaño del arreglo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+void
+\end{DoxyReturn}
+Ordena un arreglo de enteros utilizando el algoritmo de inserción.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em A} & Apuntador a un arreglo de enteros \\
+\hline
+{\em n} & El tamaño o número de elementos del arreglo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+void 
+\end{DoxyReturn}
+\begin{DoxyNote}{Nota}
+El algoritmo de ordenamiento por inserción consiste en\+: ~\newline
+-\/Se toma el primer elemento del arreglo como el primer elemento del arreglo ordenado. ~\newline
+-\/Se toma el siguiente elemento y se compara con todos los elementos del arreglo, desde el valor actual de i hasta el final. ~\newline
+-\/Si el elemento es menor que el elemento actual, se desplaza el elemento actual una posición a la derecha. ~\newline
+-\/Si el elemento es mayor o igual que el elemento actual, se inserta el elemento en la posición actual. ~\newline
+-\/Se repite el proceso para cada elemento de la lista original, insertando cada elemento en su posición adecuada en la lista ordenada. 
+\end{DoxyNote}
+\begin{DoxyRemark}{Comentarios}
+Complejidad de tiempo en el peor de los casos\+: O(n$^\wedge$2) 
+\end{DoxyRemark}
+\mbox{\Hypertarget{header_8h_ae6c9b77d3b7d69ba28f305e696832261}\label{header_8h_ae6c9b77d3b7d69ba28f305e696832261}} 
+\index{header.h@{header.h}!Intercambiar@{Intercambiar}}
+\index{Intercambiar@{Intercambiar}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{Intercambiar()}{Intercambiar()}}
+{\footnotesize\ttfamily void Intercambiar (\begin{DoxyParamCaption}\item[{int $\ast$}]{A,  }\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+
+
+Intercambia dos elementos de un arreglo. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em A} & Arreglo de enteros que contiene los elementos a intercambiar. \\
+\hline
+{\em i} & Índice del primer elemento a intercambiar. \\
+\hline
+{\em j} & Índice del segundo elemento a intercambiar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{header_8h_afc41bac232c8c97f1b6a2359230a5097}\label{header_8h_afc41bac232c8c97f1b6a2359230a5097}} 
+\index{header.h@{header.h}!Merge@{Merge}}
+\index{Merge@{Merge}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{Merge()}{Merge()}}
+{\footnotesize\ttfamily void Merge (\begin{DoxyParamCaption}\item[{int $\ast$}]{A,  }\item[{int}]{p,  }\item[{int}]{q,  }\item[{int}]{r }\end{DoxyParamCaption})}
+
+
+
+Fusiona dos sub-\/arreglos ordenados en un solo arreglo ordenado. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em A} & Arreglo de enteros que contiene los dos sub-\/arreglos a fusionar. \\
+\hline
+{\em p} & Índice del primer elemento del primer sub-\/arreglo. \\
+\hline
+{\em q} & Índice del último elemento del primer sub-\/arreglo. \\
+\hline
+{\em r} & Índice del último elemento del segundo sub-\/arreglo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+void
+\end{DoxyReturn}
+Fusiona dos sub-\/arreglos ordenados en un solo arreglo ordenado.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em A} & Apuntador a un arreglo de enteros \\
+\hline
+{\em q} & Mitad del arreglo \\
+\hline
+{\em p} & Comienzo de la indexación del arreglo \\
+\hline
+{\em r} & Final de la indexación del arreglo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+void 
+\end{DoxyReturn}
+\begin{DoxyNote}{Nota}
+-\/El procedimiento combina dos subarreglos del arreglo A en un único subarreglo ordenado. ~\newline
+-\/Divide el arreglo en dos mitades de tamaño p o q y q+1 a r. ~\newline
+-\/Ordena recursivamente las dos mitades utilizando el algoritmo merge sort ~\newline
+-\/Combina las dos mitades ordenadas en un sólo arreglo ordenado utilizando el procedimiento merge ~\newline
+-\/Este procesidimiento implementa la operación básica de Merge de dos subarreglos en un sólo arreglo ordenado. 
+\end{DoxyNote}
+\begin{DoxyRemark}{Comentarios}
+La complejidad de tiempo de este procedimiento es O(\+N) 
+\end{DoxyRemark}
+\mbox{\Hypertarget{header_8h_a4a663eab2d40fb5b206a02a88dd03d35}\label{header_8h_a4a663eab2d40fb5b206a02a88dd03d35}} 
+\index{header.h@{header.h}!MergeSort@{MergeSort}}
+\index{MergeSort@{MergeSort}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{MergeSort()}{MergeSort()}}
+{\footnotesize\ttfamily void Merge\+Sort (\begin{DoxyParamCaption}\item[{int $\ast$}]{A,  }\item[{int}]{p,  }\item[{int}]{r }\end{DoxyParamCaption})}
+
+
+
+Ordena un arreglo de enteros utilizando el algoritmo Merge Sort. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em A} & Arreglo de enteros a ordenar. \\
+\hline
+{\em p} & Índice del primer elemento del arreglo. \\
+\hline
+{\em r} & Índice del último elemento del arreglo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+void
+\end{DoxyReturn}
+Ordena un arreglo de enteros utilizando el algoritmo Merge Sort.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em A} & Apuntador a un arreglo de enteros \\
+\hline
+{\em p} & Comienzo de la indexación del arreglo \\
+\hline
+{\em r} & Final de la indexación del arreglo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+void 
+\end{DoxyReturn}
+\begin{DoxyNote}{Nota}
+El algoritmo de ordenamiento por mezcla consiste en\+: ~\newline
+-\/Si la longitud del arreglo es 0 o 1, entonces el arreglo ya se encuentra ordenado. En otro caso\+: ~\newline
+-\/Dividir el arreglo desordenado en dos subarreglos de aproximadamente la mitad del tamaño. ~\newline
+-\/Ordenar cada subarreglo recursivamente aplicando el ordenamiento por mezcla. ~\newline
+-\/Mezclar los dos subarreglo en un solo arreglo ordenado. 
+\end{DoxyNote}
+\begin{DoxyRemark}{Comentarios}
+Complejidad de tiempo en el peor de los casos\+: O(log(n)) 
+\end{DoxyRemark}
+\mbox{\Hypertarget{header_8h_acc55b41a0a7053bf797f4ebcd5d429b6}\label{header_8h_acc55b41a0a7053bf797f4ebcd5d429b6}} 
+\index{header.h@{header.h}!Pivot@{Pivot}}
+\index{Pivot@{Pivot}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{Pivot()}{Pivot()}}
+{\footnotesize\ttfamily int Pivot (\begin{DoxyParamCaption}\item[{int $\ast$}]{A,  }\item[{int}]{p,  }\item[{int}]{r }\end{DoxyParamCaption})}
+
+
+
+Escoge un pivote y lo utiliza para particionar el arreglo en dos sub-\/arreglos. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em A} & Arreglo de enteros a particionar. \\
+\hline
+{\em p} & Índice del primer elemento del arreglo. \\
+\hline
+{\em r} & Índice del último elemento del arreglo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+int Índice del pivote. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{header_8h_af1e669ac444658b619d83cdb7bbcd6c1}\label{header_8h_af1e669ac444658b619d83cdb7bbcd6c1}} 
+\index{header.h@{header.h}!Quicksort@{Quicksort}}
+\index{Quicksort@{Quicksort}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{Quicksort()}{Quicksort()}}
+{\footnotesize\ttfamily void Quicksort (\begin{DoxyParamCaption}\item[{int $\ast$}]{A,  }\item[{int}]{p,  }\item[{int}]{r }\end{DoxyParamCaption})}
+
+
+
+Ordena un arreglo de enteros utilizando el algoritmo Quicksort. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em A} & Arreglo de enteros a ordenar. \\
+\hline
+{\em p} & Índice del primer elemento del arreglo. \\
+\hline
+{\em r} & Índice del último elemento del arreglo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+void
+\end{DoxyReturn}
+Ordena un arreglo de enteros utilizando el algoritmo Quicksort.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em A} & Apuntador a un arreglo de enteros \\
+\hline
+{\em p} & Comienzo de la indexación del arreglo \\
+\hline
+{\em r} & Final de la indexación del arreglo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+void 
+\end{DoxyReturn}
+\begin{DoxyNote}{Nota}
+El algoritmo de ordenamiento rápido consiste en\+: ~\newline
+ -\/Elegir un elemento pivote del arreglo (el primer elemento). ~\newline
+ -\/Reordenar los elementos del arreglo de modo que los elementos más pequeños que el pivote estén a su izquierda, y los elementos más grandes que el pivote estén a su derecha. ~\newline
+ -\/Recursivamente, aplicar el algoritmo Quicksort a los subarreglos resultantes a la izquierda y a la derecha del pivote. ~\newline
+ -\/Combinar los subarreglos ordenados en un único arreglo ordenado. 
+\end{DoxyNote}
+\begin{DoxyRemark}{Comentarios}
+Complejidad de tiempo en el peor de los casos\+: O(n$^\wedge$2), pero en la práctica nunca se llega a esto, logrando así un buen desempeño de O(nlog(n)) 
+\end{DoxyRemark}
+\mbox{\Hypertarget{header_8h_a2ddaa13b6187d8d57295fbbe5581de08}\label{header_8h_a2ddaa13b6187d8d57295fbbe5581de08}} 
+\index{header.h@{header.h}!Seleccion@{Seleccion}}
+\index{Seleccion@{Seleccion}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{Seleccion()}{Seleccion()}}
+{\footnotesize\ttfamily void Seleccion (\begin{DoxyParamCaption}\item[{int $\ast$}]{A,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Ordena un arreglo de enteros utilizando el algoritmo de selección. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em A} & Arreglo de enteros a ordenar. \\
+\hline
+{\em n} & Tamaño del arreglo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+void
+\end{DoxyReturn}
+Ordena un arreglo de enteros utilizando el algoritmo de selección.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em A} & Apuntador a un arreglo de enteros \\
+\hline
+{\em n} & El tamaño o número de elementos del arreglo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+void 
+\end{DoxyReturn}
+\begin{DoxyNote}{Nota}
+El algoritmo de ordenamiento por selección consiste en\+: ~\newline
+ Consiste en encontrar el elemento mínimo del arreglo y colocarlo en su posición correcta en el arreglo ordenado. Este proceso se repite para el segundo elemento más pequeño, el tercer elemento más pequeño y así sucesivamente hasta que todo el arreglo se encuentre ordenado. ~\newline
+-\/Se encuentra el elemento mínimo del arreglo y se intercambia con el primer elemento. ~\newline
+-\/Se encuentra el elemento mínimo del arreglo que comienza en la segunda posición y se intercambia con el segundo elemento.\textbackslash{} ~\newline
+-\/Se continúa el proceso para cada elemento restante del arreglo, encontrando el elemento mínimo y colocándolo en su posición correcta en la lista ordenada. 
+\end{DoxyNote}
+\begin{DoxyRemark}{Comentarios}
+Complejidad de tiempo en el peor de los casos\+: O(n$^\wedge$2) 
+\end{DoxyRemark}
+\mbox{\Hypertarget{header_8h_a4fe509b61e5892bf0c3015dc8311ad3d}\label{header_8h_a4fe509b61e5892bf0c3015dc8311ad3d}} 
+\index{header.h@{header.h}!Shell@{Shell}}
+\index{Shell@{Shell}!header.h@{header.h}}
+\doxysubsubsection{\texorpdfstring{Shell()}{Shell()}}
+{\footnotesize\ttfamily void Shell (\begin{DoxyParamCaption}\item[{int $\ast$}]{A,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Ordena un arreglo de enteros utilizando el algoritmo Shell Sort. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em A} & Arreglo de enteros a ordenar. \\
+\hline
+{\em n} & Tamaño del arreglo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+void
+\end{DoxyReturn}
+Ordena un arreglo de enteros utilizando el algoritmo Shell Sort.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em A} & Apuntador a un arreglo de enteros \\
+\hline
+{\em n} & El tamaño o número de elementos del arreglo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+void 
+\end{DoxyReturn}
+\begin{DoxyNote}{Nota}
+El algoritmo de ordenamiento shell consiste en\+: ~\newline
+-\/Se divide el arreglo a la mitad ~\newline
+-\/Se inicializa la variable b=1 porque por lo menos hay 1 intercambio de elementos en el intervalo actual ~\newline
+-\/Se recorre el arreglo desde i=k hasta i\texorpdfstring{$<$}{<}=n-\/1 ~\newline
+-\/Se compara si A\mbox{[}i-\/k\mbox{]}\texorpdfstring{$>$}{>}A\mbox{[}i\mbox{]}, en caso de que sí, intercambian posiciones y se incrementa el valor de la variable b ~\newline
+-\/Si no hay ningún intercambio en todo el arreglo, b=0, por lo que el bucle interno se detiene ~\newline
+-\/Se divide el arreglo a la mitad y se repite el proceso hasta que k\texorpdfstring{$>$}{>}=1 
+\end{DoxyNote}
+\begin{DoxyRemark}{Comentarios}
+Complejidad de tiempo en el peor de los casos\+: O(n$^\wedge$2), en el mejor de los casos\+: O(nlog(n)) 
+\end{DoxyRemark}

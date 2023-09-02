@@ -1,0 +1,101 @@
+\hypertarget{merge_sort_8c}{}\doxysection{Referencia del Archivo merge\+Sort.\+c}
+\label{merge_sort_8c}\index{mergeSort.c@{mergeSort.c}}
+
+
+Este archivo contiene el programa Merge sort u ordenamiento por mezcla.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}header.\+h\char`\"{}}\newline
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{merge_sort_8c_a4a663eab2d40fb5b206a02a88dd03d35}{Merge\+Sort}} (int $\ast$A, int p, int r)
+\begin{DoxyCompactList}\small\item\em Implementación del algoritmo de ordenamiento por mezcla, el cual ordena un arreglo de enteros en forma ascendente. Usando la técnica de divide y vencerás, divide el arreglo en tamaños más pequeños, hasta que su tamaño sea 0 o 1, ya que así el arreglo se encontrará ordenado, para posteriormente llamar a la función merge y mezclar los subarreglos ordenados con el arreglo original. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{merge_sort_8c_afc41bac232c8c97f1b6a2359230a5097}{Merge}} (int $\ast$A, int p, int q, int r)
+\begin{DoxyCompactList}\small\item\em Función para mezclar los arreglos ordenados con el arreglo original. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Este archivo contiene el programa Merge sort u ordenamiento por mezcla. 
+
+\begin{DoxyAuthor}{Autor}
+Los chalanes de Marckess 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+29/03/2023 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{merge_sort_8c_afc41bac232c8c97f1b6a2359230a5097}\label{merge_sort_8c_afc41bac232c8c97f1b6a2359230a5097}} 
+\index{mergeSort.c@{mergeSort.c}!Merge@{Merge}}
+\index{Merge@{Merge}!mergeSort.c@{mergeSort.c}}
+\doxysubsubsection{\texorpdfstring{Merge()}{Merge()}}
+{\footnotesize\ttfamily void Merge (\begin{DoxyParamCaption}\item[{int $\ast$}]{A,  }\item[{int}]{p,  }\item[{int}]{q,  }\item[{int}]{r }\end{DoxyParamCaption})}
+
+
+
+Función para mezclar los arreglos ordenados con el arreglo original. 
+
+Fusiona dos sub-\/arreglos ordenados en un solo arreglo ordenado.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em A} & Apuntador a un arreglo de enteros \\
+\hline
+{\em q} & Mitad del arreglo \\
+\hline
+{\em p} & Comienzo de la indexación del arreglo \\
+\hline
+{\em r} & Final de la indexación del arreglo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+void 
+\end{DoxyReturn}
+\begin{DoxyNote}{Nota}
+-\/El procedimiento combina dos subarreglos del arreglo A en un único subarreglo ordenado. ~\newline
+-\/Divide el arreglo en dos mitades de tamaño p o q y q+1 a r. ~\newline
+-\/Ordena recursivamente las dos mitades utilizando el algoritmo merge sort ~\newline
+-\/Combina las dos mitades ordenadas en un sólo arreglo ordenado utilizando el procedimiento merge ~\newline
+-\/Este procesidimiento implementa la operación básica de Merge de dos subarreglos en un sólo arreglo ordenado. 
+\end{DoxyNote}
+\begin{DoxyRemark}{Comentarios}
+La complejidad de tiempo de este procedimiento es O(\+N) 
+\end{DoxyRemark}
+\mbox{\Hypertarget{merge_sort_8c_a4a663eab2d40fb5b206a02a88dd03d35}\label{merge_sort_8c_a4a663eab2d40fb5b206a02a88dd03d35}} 
+\index{mergeSort.c@{mergeSort.c}!MergeSort@{MergeSort}}
+\index{MergeSort@{MergeSort}!mergeSort.c@{mergeSort.c}}
+\doxysubsubsection{\texorpdfstring{MergeSort()}{MergeSort()}}
+{\footnotesize\ttfamily void Merge\+Sort (\begin{DoxyParamCaption}\item[{int $\ast$}]{A,  }\item[{int}]{p,  }\item[{int}]{r }\end{DoxyParamCaption})}
+
+
+
+Implementación del algoritmo de ordenamiento por mezcla, el cual ordena un arreglo de enteros en forma ascendente. Usando la técnica de divide y vencerás, divide el arreglo en tamaños más pequeños, hasta que su tamaño sea 0 o 1, ya que así el arreglo se encontrará ordenado, para posteriormente llamar a la función merge y mezclar los subarreglos ordenados con el arreglo original. 
+
+Ordena un arreglo de enteros utilizando el algoritmo Merge Sort.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em A} & Apuntador a un arreglo de enteros \\
+\hline
+{\em p} & Comienzo de la indexación del arreglo \\
+\hline
+{\em r} & Final de la indexación del arreglo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+void 
+\end{DoxyReturn}
+\begin{DoxyNote}{Nota}
+El algoritmo de ordenamiento por mezcla consiste en\+: ~\newline
+-\/Si la longitud del arreglo es 0 o 1, entonces el arreglo ya se encuentra ordenado. En otro caso\+: ~\newline
+-\/Dividir el arreglo desordenado en dos subarreglos de aproximadamente la mitad del tamaño. ~\newline
+-\/Ordenar cada subarreglo recursivamente aplicando el ordenamiento por mezcla. ~\newline
+-\/Mezclar los dos subarreglo en un solo arreglo ordenado. 
+\end{DoxyNote}
+\begin{DoxyRemark}{Comentarios}
+Complejidad de tiempo en el peor de los casos\+: O(log(n)) 
+\end{DoxyRemark}

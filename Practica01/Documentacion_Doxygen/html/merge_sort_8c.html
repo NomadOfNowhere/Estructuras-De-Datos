@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Practica sobre ordenamientos: Referencia del Archivo mergeSort.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Practica sobre ordenamientos<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Practica sobre ordenamientos para la clase de algoritmos y estructuras de datos</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del Archivo mergeSort.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Este archivo contiene el programa Merge sort u ordenamiento por mezcla.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="header_8h_source.html">header.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a4a663eab2d40fb5b206a02a88dd03d35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="merge_sort_8c.html#a4a663eab2d40fb5b206a02a88dd03d35">MergeSort</a> (int *A, int p, int r)</td></tr>
+<tr class="memdesc:a4a663eab2d40fb5b206a02a88dd03d35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementación del algoritmo de ordenamiento por mezcla, el cual ordena un arreglo de enteros en forma ascendente. Usando la técnica de divide y vencerás, divide el arreglo en tamaños más pequeños, hasta que su tamaño sea 0 o 1, ya que así el arreglo se encontrará ordenado, para posteriormente llamar a la función merge y mezclar los subarreglos ordenados con el arreglo original.  <br /></td></tr>
+<tr class="separator:a4a663eab2d40fb5b206a02a88dd03d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc41bac232c8c97f1b6a2359230a5097"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="merge_sort_8c.html#afc41bac232c8c97f1b6a2359230a5097">Merge</a> (int *A, int p, int q, int r)</td></tr>
+<tr class="memdesc:afc41bac232c8c97f1b6a2359230a5097"><td class="mdescLeft">&#160;</td><td class="mdescRight">Función para mezclar los arreglos ordenados con el arreglo original.  <br /></td></tr>
+<tr class="separator:afc41bac232c8c97f1b6a2359230a5097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Este archivo contiene el programa Merge sort u ordenamiento por mezcla. </p>
+<dl class="section author"><dt>Autor</dt><dd>Los chalanes de Marckess </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>29/03/2023 </dd></dl>
+</div><h2 class="groupheader">Documentación de las funciones</h2>
+<a id="afc41bac232c8c97f1b6a2359230a5097" name="afc41bac232c8c97f1b6a2359230a5097"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc41bac232c8c97f1b6a2359230a5097">&#9670;&#160;</a></span>Merge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Merge </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>r</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Función para mezclar los arreglos ordenados con el arreglo original. </p>
+<p>Fusiona dos sub-arreglos ordenados en un solo arreglo ordenado.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">A</td><td>Apuntador a un arreglo de enteros </td></tr>
+    <tr><td class="paramname">q</td><td>Mitad del arreglo </td></tr>
+    <tr><td class="paramname">p</td><td>Comienzo de la indexación del arreglo </td></tr>
+    <tr><td class="paramname">r</td><td>Final de la indexación del arreglo </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+<dl class="section note"><dt>Nota</dt><dd>-El procedimiento combina dos subarreglos del arreglo A en un único subarreglo ordenado. <br  />
+-Divide el arreglo en dos mitades de tamaño p o q y q+1 a r. <br  />
+-Ordena recursivamente las dos mitades utilizando el algoritmo merge sort <br  />
+-Combina las dos mitades ordenadas en un sólo arreglo ordenado utilizando el procedimiento merge <br  />
+-Este procesidimiento implementa la operación básica de Merge de dos subarreglos en un sólo arreglo ordenado. </dd></dl>
+<dl class="section remark"><dt>Comentarios</dt><dd>La complejidad de tiempo de este procedimiento es O(N) </dd></dl>
+
+</div>
+</div>
+<a id="a4a663eab2d40fb5b206a02a88dd03d35" name="a4a663eab2d40fb5b206a02a88dd03d35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a663eab2d40fb5b206a02a88dd03d35">&#9670;&#160;</a></span>MergeSort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MergeSort </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>r</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implementación del algoritmo de ordenamiento por mezcla, el cual ordena un arreglo de enteros en forma ascendente. Usando la técnica de divide y vencerás, divide el arreglo en tamaños más pequeños, hasta que su tamaño sea 0 o 1, ya que así el arreglo se encontrará ordenado, para posteriormente llamar a la función merge y mezclar los subarreglos ordenados con el arreglo original. </p>
+<p>Ordena un arreglo de enteros utilizando el algoritmo Merge Sort.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">A</td><td>Apuntador a un arreglo de enteros </td></tr>
+    <tr><td class="paramname">p</td><td>Comienzo de la indexación del arreglo </td></tr>
+    <tr><td class="paramname">r</td><td>Final de la indexación del arreglo </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+<dl class="section note"><dt>Nota</dt><dd>El algoritmo de ordenamiento por mezcla consiste en: <br  />
+-Si la longitud del arreglo es 0 o 1, entonces el arreglo ya se encuentra ordenado. En otro caso: <br  />
+-Dividir el arreglo desordenado en dos subarreglos de aproximadamente la mitad del tamaño. <br  />
+-Ordenar cada subarreglo recursivamente aplicando el ordenamiento por mezcla. <br  />
+-Mezclar los dos subarreglo en un solo arreglo ordenado. </dd></dl>
+<dl class="section remark"><dt>Comentarios</dt><dd>Complejidad de tiempo en el peor de los casos: O(log(n)) </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>
